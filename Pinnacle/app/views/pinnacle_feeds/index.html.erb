@@ -1,0 +1,33 @@
+<h1>Listing pinnacle_feeds</h1>
+
+<table>
+  <tr>
+    <th>Pinnacle feed time</th>
+    <th>Last contest</th>
+    <th>Last game</th>
+    <th>Sport type</th>
+    <th>Sport sub type</th>
+    <th>Created at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pinnacle_feeds.each do |pinnacle_feed| %>
+  <tr>
+    <td><%= pinnacle_feed.pinnacle_feed_time %></td>
+    <td><%= pinnacle_feed.last_contest %></td>
+    <td><%= pinnacle_feed.last_game %></td>
+    <td><%= pinnacle_feed.sport_type %></td>
+    <td><%= pinnacle_feed.sport_sub_type %></td>
+    <td><%= pinnacle_feed.created_at %></td>
+    <td><%= link_to 'Show', pinnacle_feed %></td>
+    <td><%= link_to 'Edit', edit_pinnacle_feed_path(pinnacle_feed) %></td>
+    <td><%= link_to 'Destroy', pinnacle_feed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pinnacle feed', new_pinnacle_feed_path %>

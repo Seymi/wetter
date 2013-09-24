@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  scaffold_controller: MyString
+  participant: MyString
+  participant_name: MyString
+  contestantnum: 1
+  rotnum: 1
+  visiting_home_draw: MyString
+  event_gamenumber: 1
+
+two:
+  scaffold_controller: MyString
+  participant: MyString
+  participant_name: MyString
+  contestantnum: 1
+  rotnum: 1
+  visiting_home_draw: MyString
+  event_gamenumber: 1

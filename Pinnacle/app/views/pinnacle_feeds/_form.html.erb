@@ -1,0 +1,37 @@
+<%= form_for(@pinnacle_feed) do |f| %>
+  <% if @pinnacle_feed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pinnacle_feed.errors.count, "error") %> prohibited this pinnacle_feed from being saved:</h2>
+
+      <ul>
+      <% @pinnacle_feed.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pinnacle_feed_time %><br />
+    <%= f.number_field :pinnacle_feed_time %>
+  </div>
+  <div class="field">
+    <%= f.label :last_contest %><br />
+    <%= f.number_field :last_contest %>
+  </div>
+  <div class="field">
+    <%= f.label :last_game %><br />
+    <%= f.number_field :last_game %>
+  </div>
+  <div class="field">
+    <%= f.label :sport_type %><br />
+    <%= f.text_field :sport_type %>
+  </div>
+  <div class="field">
+    <%= f.label :sport_sub_type %><br />
+    <%= f.text_field :sport_sub_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

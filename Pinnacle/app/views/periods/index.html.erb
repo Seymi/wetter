@@ -1,0 +1,39 @@
+<h1>Listing periods</h1>
+
+<table>
+  <tr>
+    <th>Event game number</th>
+    <th>Period number</th>
+    <th>Period description</th>
+    <th>Period cutoff datetimegmt</th>
+    <th>Period status</th>
+    <th>Period update</th>
+    <th>Spread maximum</th>
+    <th>Moneyline maximum</th>
+    <th>Total maximum</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @periods.each do |period| %>
+  <tr>
+    <td><%= period.event_game_number %></td>
+    <td><%= period.period_number %></td>
+    <td><%= period.period_description %></td>
+    <td><%= period.period_cutoff_datetimeGMT %></td>
+    <td><%= period.period_status %></td>
+    <td><%= period.period_update %></td>
+    <td><%= period.spread_maximum %></td>
+    <td><%= period.moneyline_maximum %></td>
+    <td><%= period.total_maximum %></td>
+    <td><%= link_to 'Show', period %></td>
+    <td><%= link_to 'Edit', edit_period_path(period) %></td>
+    <td><%= link_to 'Destroy', period, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Period', new_period_path %>

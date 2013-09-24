@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pinnacle_feed_time: 1
+  last_contest: 1
+  last_game: 1
+  sport_type: MyString
+  sport_sub_type: MyString
+
+two:
+  pinnacle_feed_time: 1
+  last_contest: 1
+  last_game: 1
+  sport_type: MyString
+  sport_sub_type: MyString

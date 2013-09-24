@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <b>Event game number:</b>
+  <%= @period.event_game_number %>
+</p>
+
+
+<p>
+  <b>Period number:</b>
+  <%= @period.period_number %>
+</p>
+
+<p>
+  <b>Period description:</b>
+  <%= @period.period_description %>
+</p>
+
+<p>
+  <b>Period cutoff datetimegmt:</b>
+  <%= @period.period_cutoff_datetimeGMT %>
+</p>
+
+<p>
+  <b>Period status:</b>
+  <%= @period.period_status %>
+</p>
+
+<p>
+  <b>Period update:</b>
+  <%= @period.period_update %>
+</p>
+
+<p>
+  <b>Spread maximum:</b>
+  <%= @period.spread_maximum %>
+</p>
+
+<p>
+  <b>Moneyline maximum:</b>
+  <%= @period.moneyline_maximum %>
+</p>
+
+<p>
+  <b>Total maximum:</b>
+  <%= @period.total_maximum %>
+</p>
+
+
+<%= link_to 'Edit', edit_period_path(@period) %> |
+<%= link_to 'Back', periods_path %>

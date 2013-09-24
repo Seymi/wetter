@@ -1,0 +1,31 @@
+<h1>Listing participants</h1>
+
+<table>
+  <tr>
+    <th>Participant name</th>
+    <th>Contestantnum</th>
+    <th>Rotnum</th>
+    <th>Visiting home draw</th>
+    <th>Event gamenumber</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @participants.each do |participant| %>
+  <tr>
+    <td><%= participant.participant_name %></td>
+    <td><%= participant.contestantnum %></td>
+    <td><%= participant.rotnum %></td>
+    <td><%= participant.visiting_home_draw %></td>
+    <td><%= participant.event_game_number %></td>
+    <td><%= link_to 'Show', participant %></td>
+    <td><%= link_to 'Edit', edit_participant_path(participant) %></td>
+    <td><%= link_to 'Destroy', participant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Participant', new_participant_path %>

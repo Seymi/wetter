@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pinnacle feed time:</b>
+  <%= @pinnacle_feed.pinnacle_feed_time %>
+</p>
+
+<p>
+  <b>Last contest:</b>
+  <%= @pinnacle_feed.last_contest %>
+</p>
+
+<p>
+  <b>Last game:</b>
+  <%= @pinnacle_feed.last_game %>
+</p>
+
+<p>
+  <b>Sport type:</b>
+  <%= @pinnacle_feed.sport_type %>
+</p>
+
+<p>
+  <b>Sport sub type:</b>
+  <%= @pinnacle_feed.sport_sub_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_pinnacle_feed_path(@pinnacle_feed) %> |
+<%= link_to 'Back', pinnacle_feeds_path %>

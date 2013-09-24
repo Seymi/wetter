@@ -1,0 +1,55 @@
+<%= form_for(@period) do |f| %>
+  <% if @period.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@period.errors.count, "error") %> prohibited this period from being saved:</h2>
+
+      <ul>
+      <% @period.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :event_game_number %><br />
+    <%= f.number_field :event_game_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :period_number %><br />
+    <%= f.number_field :period_number %>
+  </div>
+  <div class="field">
+    <%= f.label :period_description %><br />
+    <%= f.text_field :period_description %>
+  </div>
+  <div class="field">
+    <%= f.label :period_cutoff_datetimeGMT %><br />
+    <%= f.datetime_select :period_cutoff_datetimeGMT %>
+  </div>
+  <div class="field">
+    <%= f.label :period_status %><br />
+    <%= f.text_field :period_status %>
+  </div>
+  <div class="field">
+    <%= f.label :period_update %><br />
+    <%= f.text_field :period_update %>
+  </div>
+  <div class="field">
+    <%= f.label :spread_maximum %><br />
+    <%= f.text_field :spread_maximum %>
+  </div>
+  <div class="field">
+    <%= f.label :moneyline_maximum %><br />
+    <%= f.text_field :moneyline_maximum %>
+  </div>
+  <div class="field">
+    <%= f.label :total_maximum %><br />
+    <%= f.text_field :total_maximum %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  period_number: 1
+  period_description: MyString
+  period_cutoff_datetimeGMT: 2013-03-25 01:25:19
+  period_status: 
+  period_update: MyString
+  spread_maximum: 9.99
+  moneyline_maximum: 9.99
+  total_maximum: 9.99
+
+two:
+  period_number: 1
+  period_description: MyString
+  period_cutoff_datetimeGMT: 2013-03-25 01:25:19
+  period_status: 
+  period_update: MyString
+  spread_maximum: 9.99
+  moneyline_maximum: 9.99
+  total_maximum: 9.99

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Participant name:</b>
+  <%= @participant.participant_name %>
+</p>
+
+<p>
+  <b>Contestantnum:</b>
+  <%= @participant.contestantnum %>
+</p>
+
+<p>
+  <b>Rotnum:</b>
+  <%= @participant.rotnum %>
+</p>
+
+<p>
+  <b>Visiting home draw:</b>
+  <%= @participant.visiting_home_draw %>
+</p>
+
+<p>
+  <b>Event game number:</b>
+  <%= @participant.event_game_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_participant_path(@participant) %> |
+<%= link_to 'Back', participants_path %>

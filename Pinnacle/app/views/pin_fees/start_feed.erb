@@ -1,0 +1,30 @@
+<h1>PinFees#start_feed</h1>
+<p>Find me in app/views/pin_fees/start_feed.html.erb</p>
+
+<%= form_tag( :action => 'save_feeder', :feed_time => @feed_time) do %>
+<%#= form_tag :action => 'save_feeder' do %>
+<%#= form_tag :action => 'save_feeder' do %>
+
+  <% @sport_types = ['Basketball','Hockey', 'Soccer'] %>
+  <%= label :sport_type,  'Sportart' %><br />
+  <%= select_tag( :sport_type, options_for_select(@sport_types), { :include_blank => 'Select a Sporttype' }  ) %><br />
+
+  <% @sport_sub_types = ['NBA', 'NCCA'] %>
+  <%= label :sport_sub_type,  'Liga' %><br />
+  <%= select_tag( :sport_sub_type, options_for_select(@sport_sub_types), { :include_blank => 'Select a SportSubType' }  ) %><br />
+
+  <%= @feed_time    %><br />
+  <%= @last_contest %><br />
+  <%= @last_game    %><br />
+
+  <% { :feed_time => @feed_time } %>
+
+
+  <%= @events    %>
+
+  <%= submit_tag 'Read Feed' %><br />
+
+
+<% end %>
+
+

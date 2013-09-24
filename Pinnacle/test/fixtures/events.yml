@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  event_date_time_GMT: 2013-03-08 01:04:32
+  game_number: 1
+  sport_type: MyString
+  leage: MyString
+  is_live: false
+
+two:
+  event_date_time_GMT: 2013-03-08 01:04:32
+  game_number: 1
+  sport_type: MyString
+  leage: MyString
+  is_live: false

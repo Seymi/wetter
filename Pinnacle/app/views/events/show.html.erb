@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Event date time gmt:</b>
+  <%= @event.event_date_time_GMT %>
+</p>
+
+<p>
+  <b>Game number:</b>
+  <%= @event.game_number %>
+</p>
+
+<p>
+  <b>Sport type:</b>
+  <%= @event.sport_type %>
+</p>
+
+<p>
+  <b>Leage:</b>
+  <%= @event.leage %>
+</p>
+
+<p>
+  <b>Is live:</b>
+  <%= @event.is_live %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
