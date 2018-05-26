@@ -72,8 +72,8 @@ end
 
 
 
-username            = 'm_seymi'
-password            = 'fl1wsalbf'
+username            = 'user'
+password            = 'passw'
 product_id          = 82
 vendor_software_id  = 0
 location_id         = 0
