@@ -33,4 +33,4 @@ end
 
 api = BetfairAPI.new
 
-l = api.login('m_seymi', 'fl1wsalbf', 82, 0, 0, nil)
+l = api.login('user', 'passw', 82, 0, 0, nil)
